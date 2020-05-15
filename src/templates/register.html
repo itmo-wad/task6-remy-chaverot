@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style style="style">
+    * {
+	      box-sizing: border-box;
+	      font-family: 'Arial', sans-serif;
+      }
+
+    body {
+	     margin: 0;
+	     height: 100vh;
+	     width: 100vw;
+	     display: flex;
+	     justify-content: center;
+	     align-items: center;
+	     background-color: #695acd;
+     }
+
+     .box-login {
+	      width: 350px;
+	      height: auto;
+	      padding: 32px;
+	      display: block;
+        background-color: #ffffff;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+	&__grid {
+		display: grid;
+		margin-bottom: 40px;
+	}
+}
+
+.input-group {
+	display: block;
+	width: 100%;
+	height: auto;
+	position: relative;
+	&__input {
+		display: block;
+		width: 100%;
+		background-color: #eeeeeeb9;;
+		font-size: 18px;
+		color: #fff;
+		padding: 8px 4px;
+		border: none;
+		border-bottom: 2px solid #fff;
+	}
+}
+
+.btn {
+	font-size: 20px;
+	letter-spacing: 0.05em;
+	color: #fff;
+	width: 100%;
+	padding: 8px;
+	border-radius: 20px;
+	background-color: #695acd;
+	border: solid 2px #fff;
+}
+
+	</style>
+</head>
+
+<body>
+      <form method="POST" action="/addUserDb" class="box-login">
+	       <div class="box-login__grid">
+		         <div class="input-group">
+                  <label>Username: </label>
+			            <input class="input-group__input" id="user" type="text" placeholder="username" name="user">
+		         </div>
+		     <div class="input-group">
+                  <label>Password: </label>
+			            <input class="input-group__input" id="password" type="password" name="pwd">
+		     </div>
+				 <div class="input-group">
+									<label>Email: </label><br>
+								  <input class="input-group__input" id="email" type="text" name="email_addr" placeholder="email">
+				</div>
+	      </div>
+	       <button class="btn" type="submit">Register</button>
+    </form>
+</body >
+</html>
