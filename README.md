@@ -1,6 +1,6 @@
 # task6-remy-chaverot
 
-docker-compose build
+<br> docker-compose build </br>
 docker-compose up
 
 - create Dockerfile1
